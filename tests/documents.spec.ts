@@ -1,0 +1,27 @@
+import { test, expect } from '@playwright/test';
+test('company creation', async ({ page }) => {
+    await page.goto("https://ui.freecrm.com/");
+    await page.fill('input[name="email"]', 'nandinimodugu23@gmail.com');
+    await page.fill('input[name="password"]', 'N@ndu2308');
+    await page.getByText('login').click();
+    await expect(page.locator('text=Home')).toBeVisible();
+    await page.getByRole('link', { name: ' Documents' }).click();
+    await page.getByRole('button', { name: 'Create' }).click();
+    await page.getByRole('combobox').filter({ hasText: 'FolderCallsExportsXYZ' }).getByRole('textbox').click();
+    await page.getByRole('combobox').filter({ hasText: 'CallsCallsExportsXYZ' }).getByRole('textbox').fill('xy');
+    await page.getByRole('option', { name: 'XYZ' }).click();
+    await page.locator('input[type="text"]').nth(5).click();
+    await page.locator('input[type="text"]').nth(5).fill('ajay');
+    await page.getByText('Ajay', { exact: true }).click();
+    await page.locator('div:nth-child(6) > div > .ui.field > .ui > input').first().click();
+    await page.locator('.ui.active > input').fill('crm');
+    await page.getByRole('option', { name: 'Free crm', exact: true }).click();
+    await page.locator('input[name="title"]').click();
+    await page.locator('input[name="title"]').fill('crm upgrade');
+    await page.locator('div:nth-child(4) > div:nth-child(2) > .ui.field > .ui > input').click();
+    await page.locator('.ui.active > input').fill('xy');
+    await page.getByRole('option', { name: 'XYZ' }).first().click();
+    //   await page.getByRole('option', { name: 'XYZ' }).first().click();
+    await page.locator('div:nth-child(5) > div:nth-child(2) > .ui.field > .ui > input').fill('cas');
+    await page.goto('https://ui.freecrm.com/documents');
+});

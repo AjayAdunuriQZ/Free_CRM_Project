@@ -1,0 +1,66 @@
+{
+    "login": {
+        "username": "nandinimodugu23@gmail.com",
+        "password": "Nandini@123"
+    },
+    "Calndar": {
+        "title": "Team Meeting",
+        "startDate": "29/05/2026 10:00 AM",
+        "endDate": "29/05/2026 11:00 AM",
+        "description": "Weekly team status discussion."
+    },
+    "Contact": {
+        "firstName": "Ajay",
+        "lastName": "Kumar",
+        "email": "ajay.kumar@gmail.com"
+    },
+    "company": {
+        "name": "ABC technologies.",
+        "website": "www.abctech.com",
+        "Phone": "987-654-3210"
+    },
+    "Deal": {
+        "Deal Title":"CRM Testing",
+        "Company":"ABC technologies.",
+        "Contact":"Ajay",
+        "amount":"5000 USD"
+    },
+    "task": {
+        "Task Title":"Client Follow-Up",
+        "assignedTo":"Ajay",
+        "Type":"Call",
+        "Priority":"High"
+    },
+    "cases": {
+        "Case Title":"Payment Issue",
+        "Status":"Open",
+        "Priority":"High"
+    },
+    "call": {
+        "Call Title":"Otgoing",
+        "AssignedTo":"Ajay",
+        "Duration":"30 minutes"
+    },
+    "Document": {
+        "Folder":"Project Files",
+        "Title":"Requirement Document",
+        "File":"Requirements.pdf"
+    },
+    "Email": {
+        "Subject":"Project Update",
+        "Body":"Please find the latest project update attached.",
+        "Attachment":"Project_Update.pdf"
+    },
+    "Campaigns":{
+        "Campaign Name":"Product launch",
+        "Trasnport":"Email"
+    },
+    "Form":{
+        "Form Name":"Customer Feedback"
+    },
+    "Report":{
+        "Report Name":"Reports module"
+
+    }
+
+}
